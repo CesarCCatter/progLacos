@@ -5,3 +5,13 @@ de números deve parar quando o usuário digitar o número -1, e este número -1
 como maior, nem como menor, e nem na contagem da média.
 '''
 
+
+
+
+num1 = float(input("Digite um número: "))
+
+while (num1 != -1):
+    num1 = int(input("Digite um número: "))
+
+maior = num1
+menor = num1

@@ -8,5 +8,5 @@ cont = 0
 
 while (cont <= 20):
     if (cont % 2 != 0):
-        print(f"O número {cont}é ímpar")
+        print(f"O número {cont} é ímpar")
     cont = cont + 1
