@@ -4,10 +4,9 @@
 '''
 
 cont = 1
-acum = 0
-p = 0
+acum = 1
 while ( cont <= 5 ):
-    acum = cont * (cont + 2)
-    cont = cont + 1
     print(acum)
-    
+    acum = cont * acum
+    cont = cont + 1
+print(acum)

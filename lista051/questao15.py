@@ -5,3 +5,6 @@ anterior subsequente
 '''
 
 
+cont = 1
+acum = 0
+

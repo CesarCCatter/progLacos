@@ -5,25 +5,30 @@ de números deve parar quando o usuário digitar o número -1, e este número -1
 como maior, nem como menor, e nem na contagem da média.
 '''
 
+num = float(input("Digite um valor real (-1 encerra o programa): "))
 
-num1 = float(input("Digite um valor real:\n"))
-div = 0
+mai = num
+men = num
+med = num
+tot_resp = 0
+soma = 0
+while (num != -1):
+    soma = soma + num
+    tot_resp = tot_resp + 1
 
-if num1 != -1:
-    med = num1
-    mai = num1
-    men = num1
 
-    while num1 != -1:
-        num1 = float(input("Digite um valor real:\n"))
-        if num1 != -1:
-            med = med + num1
-        if num1 != -1:
-            div = div + 1
-        if mai < num1 and num1 != -1:
-            maior = num1
-        if men > num1 and num1 != -1:
-            menor = num1
+    if (mai < num):
+        mai = num
 
-    print(f"O maior número é {maior} e o menor é {menor} e a média é de {med / div:.2f}")
- 
+    if (men > num):
+        men = num
+
+    num = float(input("Digite outro valor real (-1 encerra o programa): "))
+
+if (mai == -1):
+    print(f"Maluco")
+else:
+    print(f"Maior valor inserido: {mai}")
+    print(f"Menor valor inserido: {men}")
+    print(f"Média dos valores inseridos: {soma / tot_resp}")
+
