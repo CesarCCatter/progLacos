@@ -10,3 +10,4 @@ while ( cont <= 5 ):
     acum = cont * acum
     cont = cont + 1
 print(acum)
+
