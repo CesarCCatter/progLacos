@@ -7,4 +7,9 @@ expoente qualquer (Variável e), ou seja, de be
 b = int(input("Informe um número para ser a base: "))
 e = int(input("Informe um número para ser o expoente: "))
 
-print( f"O resultado do número {b} elevado a {e} é: {b **e}" )
+cont = 1
+acum = 1
+while (cont <= e):
+    acum = acum * b
+    cont = cont + 1
+print(f"{b:.0f} elevado a {e:.0f} é: {acum:.0f}")

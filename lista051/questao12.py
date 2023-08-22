@@ -6,12 +6,24 @@ como maior, nem como menor, e nem na contagem da média.
 '''
 
 
+num1 = float(input("Digite um valor real:\n"))
+div = 0
 
+if num1 != -1:
+    med = num1
+    mai = num1
+    men = num1
 
-num1 = float(input("Digite um número: "))
+    while num1 != -1:
+        num1 = float(input("Digite um valor real:\n"))
+        if num1 != -1:
+            med = med + num1
+        if num1 != -1:
+            div = div + 1
+        if mai < num1 and num1 != -1:
+            maior = num1
+        if men > num1 and num1 != -1:
+            menor = num1
 
-while (num1 != -1):
-    num1 = int(input("Digite um número: "))
-
-maior = num1
-menor = num1
+    print(f"O maior número é {maior} e o menor é {menor} e a média é de {med / div:.2f}")
+ 

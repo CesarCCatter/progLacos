@@ -14,7 +14,7 @@ import math
 contp = 0
 
 while (contp <= 15):
-    cont = math.pow(3,contp)
+    cont = 3 ** contp
+    #cont = math.pow(3,contp)
     print(f"O resultado de 3 elevado a {contp} é : {cont:.0f}")
     contp = contp + 1
-

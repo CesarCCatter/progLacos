@@ -7,6 +7,7 @@ cont = 0
 acum = 0
 
 while (cont <= 500):
-    print(f"O valor {cont}é par")
     acum = acum + cont
-    cont = cont +2
+    cont = cont + 2
+print(f"{acum} ")
+
